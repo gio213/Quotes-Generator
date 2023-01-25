@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(-45deg, #1d1c1c, #000000, #131212, #211f1f);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#card {
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(62, 56, 56, 0.1),
+      rgba(62, 56, 56, 0.1)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border: 1px solid #ffffff1a;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 0 0 20px #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+span {
+  align-self: flex-end;
+  color: #fff;
+  text-shadow: 0 0 20px;
+  font-size: 1.7rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px 0;
+}
+
+p {
+  color: #fff;
+  text-shadow: 0 0 20px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+}
+
+button {
+  box-sizing: border-box;
+  background-color: rgb(233, 16, 16);
+  box-shadow: 0 0 20px rgb(250, 5, 5);
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(246, 71, 71);
+
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 130px;
+    height: 30px;
+  }
+
+  #card {
+    width: 65%;
+    height: auto !important;
+  }
+
+  span {
+    font-size: 1.2rem;
+    align-self: flex-end;
+  }
+}
